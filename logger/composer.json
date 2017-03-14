@@ -1,0 +1,20 @@
+{
+    "name": "bernardosecades/tips-and-tricks-logger",
+    "description": "Logger",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bernardosecades",
+            "email": "bernardosecades@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BernardoSecades\\TipsAndTricks\\Logger\\": "src/"
+        }
+    },
+    "require": {
+        "psr/log": "^1.0"
+    }
+}

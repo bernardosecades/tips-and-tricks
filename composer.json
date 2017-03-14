@@ -1,0 +1,13 @@
+{
+    "name": "bernardosecades/tips-and-tricks",
+    "description": "Tips and Tricks",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bernardosecades",
+            "email": "bernardosecades@gmail.com"
+        }
+    ],
+    "require": {}
+}
