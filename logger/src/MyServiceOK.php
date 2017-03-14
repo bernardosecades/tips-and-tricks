@@ -34,7 +34,7 @@ class MyServiceOK
     protected $logger;
 
     /**
-     * @param LoggerInterface|null $logger∫
+     * @param LoggerInterface|null $logger
      */
     public function __construct(LoggerInterface $logger = null)
     {
