@@ -1,0 +1,3 @@
+# tips-and-tricks
+
+Tips and tricks: php, symfony, design patterns, docker, mysql, ...
