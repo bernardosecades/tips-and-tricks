@@ -1,0 +1,53 @@
+{
+  "name" : "bernardosecades/functional-test-standalone-bundle",
+  "description" : "Functional test in standalone bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "bernardosecades",
+    "email" : "bernardosecades@gmail.com"
+  }],
+  "keywords" : [
+    "symfony", "testing"
+  ],
+  "license" : "MIT",
+  "autoload":{
+    "psr-4":{
+      "BernardoSecades\\FunctionalTestBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "Tests/"
+    }
+  },
+  "require": {
+    "php": "^5.5.9|~7.0",
+    "symfony/symfony": "^2.7|^3.0",
+    "symfony/config": "^2.7|^3.0",
+    "symfony/debug": "^2.7|^3.0",
+    "symfony/dependency-injection": "^2.7|^3.0",
+    "symfony/event-dispatcher": "^2.7|^3.0",
+    "symfony/finder": "^2.7|^3.0",
+    "symfony/http-foundation": "^2.7|^3.0",
+    "symfony/http-kernel": "^2.7|^3.0",
+    "symfony/routing": "^2.7|^3.0",
+    "symfony/security-core": "^2.7|^3.0",
+    "symfony/framework-bundle": "^2.7|^3.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "sensio/framework-extra-bundle": "^3.0.13",
+    "symfony/phpunit-bridge": "^3.2",
+    "symfony/form": "^2.7|^3.0",
+    "symfony/validator": "^2.7|^3.0",
+    "symfony/serializer": "^2.7.11|^3.0.4",
+    "symfony/yaml": "^2.7|^3.0",
+    "symfony/security-bundle": "^2.7|^3.0",
+    "symfony/web-profiler-bundle": "^2.7|^3.0",
+    "symfony/dependency-injection": "^2.7|^3.0",
+    "phpunit/phpunit": ">=4.5"
+  }
+}

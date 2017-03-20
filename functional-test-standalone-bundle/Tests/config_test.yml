@@ -1,0 +1,6 @@
+imports:
+    - { resource: "@FunctionalTestBundle/Resources/config/services.yml" }
+
+framework:
+    secret: "Three can keep a secret, if two of them are dead."
+    test: ~

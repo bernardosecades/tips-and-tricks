@@ -1,0 +1,3 @@
+services:
+    bernardosecades.my_service:
+        class: BernardoSecades\FunctionalTestBundle\Lib\MyService

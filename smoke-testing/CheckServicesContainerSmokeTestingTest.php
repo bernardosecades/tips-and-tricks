@@ -35,7 +35,10 @@ class CheckServicesContainerSmokeTestingTest extends KernelTestCase
      */
     public function check()
     {
-        $reflect = new \ReflectionClass('appTestDebugProjectContainer');
+
+        $environment = $this->getContainer()->get('kernel')->getEnvironment();
+        $classNameDebugContainer = sprintf('app%sDebugProjectContainer', ucwords($environment));
+        $reflect = new \ReflectionClass($classNameDebugContainer);
         $reflectionPropertyMethodMap = $reflect->getProperty('methodMap');
         $reflectionPropertyMethodMap->setAccessible(true);
         $services = array_keys($reflectionPropertyMethodMap->getValue($this->getContainer()));
