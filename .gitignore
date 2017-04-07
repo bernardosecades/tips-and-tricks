@@ -1,1 +1,3 @@
 logger/vendor/
+composer/vendor/
+composer/composer.lock
