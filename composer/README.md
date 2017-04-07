@@ -25,7 +25,7 @@
     },
     {
       "type": "path",
-      "url": "../test",
+      "url": "../../test",
       "options": {
         "symlink": true
       }
