@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 use Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
 use Exception;
 
-class CheckServicesContainerSmokeTestingTest extends KernelTestCase
+class CheckServicesContainerTest extends KernelTestCase
 {
     /**
      * @inheritDoc
@@ -49,7 +49,6 @@ class CheckServicesContainerSmokeTestingTest extends KernelTestCase
             }
             try {
                 $this->getContainer()->get($serviceName);
-                $this->assertTrue(true);
             } catch (ServiceNotFoundException $exception) {
                 $this->fail(sprintf('Service Not Found: %s', $exception->getMessage()));
             } catch (ServiceCircularReferenceException $exception) {
@@ -58,5 +57,7 @@ class CheckServicesContainerSmokeTestingTest extends KernelTestCase
                 $this->fail(sprintf('Service Error: %s', $exception->getMessage()));
             }
         }
+
+        $this->assertTrue(true);
     }
 }
