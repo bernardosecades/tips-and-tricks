@@ -1,0 +1,31 @@
+exchanges:
+  - name: my-exchange
+    type: 'topic'
+    passive: false
+    durable:  false
+    auto_delete: false
+
+queues:
+  - name: my-queue-1
+    exchange: my-exchange
+    routing: my-routing-1
+    passive: false
+    durable: false
+    exclusive: false
+    auto_delete: false
+
+  - name: my-queue-2
+    exchange: my-exchange
+    routing: my-routing-2
+    passive: false
+    durable: false
+    exclusive: false
+    auto_delete: false
+
+  - name: my-queue-3
+    exchange: my-exchange
+    routing: my-routing-3
+    passive: false
+    durable: false
+    exclusive: false
+    auto_delete: false
