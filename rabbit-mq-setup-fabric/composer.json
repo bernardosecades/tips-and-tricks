@@ -1,0 +1,19 @@
+{
+  "name": "bernardosecades/tips-and-tricks-rabbit-mq-setup-fabric",
+  "description": "RabbitMQ Setup Fabric",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "bernardosecades",
+      "email": "bernardosecades@gmail.com"
+    }
+  ],
+  "require": {
+    "php-amqplib/php-amqplib": "2.6.3",
+    "symfony/yaml": "3.2.8"
+  },
+  "require-dev": {
+    "symfony/dotenv": "dev-master"
+  }
+}
